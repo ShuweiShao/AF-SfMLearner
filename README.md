@@ -1,2 +1,2 @@
 # Self-Supervised Monocular Depth and Ego-Motion Estimation in Endoscopy: Appearance Flow to the Rescue
-The source code will be publicaly available upon the acceptance.
+<font color=#0099ff size=7> The source code will be publicaly available upon the acceptance. </font>
