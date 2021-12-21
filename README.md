@@ -16,3 +16,23 @@ and
 >
 > [ICRA 2021 (pdf)](https://ieeexplore.ieee.org/abstract/document/9561508)
 
+If you find our work useful in your research please consider citing our paper:
+
+```
+@article{shao2021self,
+  title={Self-Supervised Monocular Depth and Ego-Motion Estimation in Endoscopy: Appearance Flow to the Rescue},
+  author={Shao, Shuwei and Pei, Zhongcai and Chen, Weihai and Zhu, Wentao and Wu, Xingming and Sun, Dianmin and Zhang, Baochang},
+  journal={arXiv preprint arXiv:2112.08122},
+  year={2021}
+}
+```
+```
+@inproceedings{shao2021self,
+  title={Self-Supervised Learning for Monocular Depth Estimation on Minimally Invasive Surgery Scenes},
+  author={Shao, Shuwei and Pei, Zhongcai and Chen, Weihai and Zhang, Baochang and Wu, Xingming and Sun, Dianmin and Doermann, David},
+  booktitle={2021 IEEE International Conference on Robotics and Automation (ICRA)},
+  pages={7159--7165},
+  year={2021},
+  organization={IEEE}
+}
+```
