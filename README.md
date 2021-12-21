@@ -67,6 +67,18 @@ You can download the [Endovis or SCARED dataset](https://endovissub2019-scared.g
 
 The train/test/validation split for Endovis dataset used in our works is defined in the `splits/endovis` folder. 
 
+**Data structure**
+
+The directory of dataset structure is shown as follows:
+
+```
+/path/to/endovis_data/
+  dataset1/
+    keyframe1/
+      image_02/
+        data/
+          image1.png
+```
 
 
 
