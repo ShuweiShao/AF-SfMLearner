@@ -36,3 +36,8 @@ If you find our work useful in your research please consider citing our paper:
   organization={IEEE}
 }
 ```
+
+
+
+## ⚙️ Setup
+We ran our experiments with PyTorch 1.2.0, torchvision 0.4.0, CUDA 10.2, Python 3.7.3 and Ubuntu 18.04.
