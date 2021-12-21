@@ -86,7 +86,7 @@ Stage two:
 CUDA_VISIBLE_DEVICES=0 python train_stage_two.py --data_path <your_data_path> --log_dir <path_to_save_model (depth, pose, appearance flow, optical flow)> --load_weights_folder <path_to_the_trained_optical_flow_model_in_stage_one>
 ```
 
-**End to end fashion:**
+**End-to-end fashion:**
 
 ```shell
 CUDA_VISIBLE_DEVICES=0 python train_end_to_end.py --data_path <your_data_path> --log_dir <path_to_save_model (depth, pose, appearance flow, optical flow)>
@@ -104,8 +104,15 @@ CUDA_VISIBLE_DEVICES=0 python export_gt_depth.py --data_path endovis_data --spli
 
 The following example command evaluates the epoch 19 weights of a model named `mono_model`:
 ```shell
-CUDA_VISIBLE_DEVICES=0 python evaluate_depth.py --data_path <your_data_path> --load_weights_folder ~/mono_model/mdp/models/weights_19/ --eval_mono
+CUDA_VISIBLE_DEVICES=0 python evaluate_depth.py --data_path <your_data_path> --load_weights_folder ~/mono_model/mdp/models/weights_19 --eval_mono
 ```
 
 
 
+## 📦 Model zoo
+
+| Model        | Abs Rel | Sq Rel | RMSE | RMSE log | Link |
+| ------------ | ---------- | ------ | --------- | ---- | ---- |
+| Stage-wise fashion (ID 5 in Table 8) | 0.059 | 0.435 | 4.925 | 0.082 | [baidu](https://pan.baidu.com/s/1MT5RrbDl8Wh6otPihD0kEw)(code: n6lh) [google](https://drive.google.com/file/d/14VFlTHq6raQkdyCRBCQYV-mbFO4eOM5b/view?usp=sharing) |
+| End-to-end fashion (ID 3 in Table 8) | 0.059 | 0.470 | 5.062 | 0.083 |[baidu](https://pan.baidu.com/s/1JrcMBU0wKCbgEdiF2kzQ6A)(code: z4mo) [google](https://drive.google.com/file/d/1kf7LjQ6a2ACKr6nX5Uyee3of3bXn1xWB/view?usp=sharing) |
+| ICRA  | 0.063 | 0.489 | 5.185 | 0.086 |[baidu](https://pan.baidu.com/s/11SogWGI7C7kUGTkABPTMOA)(code: wbm8) [google](https://drive.google.com/file/d/1klpUlkYtXZiRsjY6SdRHvNAKDoYc-zgo/view?usp=sharing) |
