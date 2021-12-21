@@ -19,6 +19,7 @@ and
 
 
 ## ✏️ 📄 Citation
+
 If you find our work useful in your research please consider citing our paper:
 
 ```
@@ -43,13 +44,52 @@ If you find our work useful in your research please consider citing our paper:
 
 
 ## ⚙️ Setup
+
 We ran our experiments with PyTorch 1.2.0, torchvision 0.4.0, CUDA 10.2, Python 3.7.3 and Ubuntu 18.04.
 
 
+
 ## 🖼️ Prediction for a single image or a folder of images
+
 You can predict scaled disparity for a single image or a folder of images with:
 
 ```shell
 CUDA_VISIBLE_DEVICES=0 python test_simple.py --model_path <your_model_path> --image_path <your_image_or_folder_path>
 ```
+
+
+
+## 💾 Datasets
+
+You can download the [Endovis or SCARED dataset](https://endovissub2019-scared.grand-challenge.org) by signing the challenge rules and emailing them to max.allan@intusurg.com, the [EndoSLAM dataset](https://data.mendeley.com/datasets/cd2rtzm23r/1), the [SERV-CT dataset](https://www.ucl.ac.uk/interventional-surgical-sciences/serv-ct), and the [Hamlyn dataset](http://hamlyn.doc.ic.ac.uk/vision/).
+
+**Splits**
+
+The train/test/validation split for Endovis dataset used in our works is defined in the `splits/endovis` folder. 
+
+
+
+
+## ⏳ Training
+
+**Stage-wise fashion:**
+
+*Stage one:*
+
+```shell
+CUDA_VISIBLE_DEVICES=0 python train_stage_one.py --data_path <your_data_path> --log_dir <path_to_save_model (optical flow)>
+```
+
+*Stage two:*
+
+```shell
+CUDA_VISIBLE_DEVICES=0 python train_stage_two.py --data_path <your_data_path> --log_dir <path_to_save_model (depth, pose, appearance flow, optical flow)> --load_weights_folder <path_to_the_trained_optical_flow_model_in_stage_one>
+```
+
+**End to end fashion:**
+
+```shell
+CUDA_VISIBLE_DEVICES=0 python train_end_to_end.py --data_path <your_data_path> --log_dir <path_to_save_model (depth, pose, appearance flow, optical flow)>
+```
+
 
