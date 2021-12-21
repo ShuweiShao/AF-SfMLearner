@@ -16,6 +16,9 @@ and
 >
 > [ICRA 2021 (pdf)](https://ieeexplore.ieee.org/abstract/document/9561508)
 
+
+
+## ✏️ 📄 Citation
 If you find our work useful in your research please consider citing our paper:
 
 ```
@@ -41,3 +44,12 @@ If you find our work useful in your research please consider citing our paper:
 
 ## ⚙️ Setup
 We ran our experiments with PyTorch 1.2.0, torchvision 0.4.0, CUDA 10.2, Python 3.7.3 and Ubuntu 18.04.
+
+
+## 🖼️ Prediction for a single image or a folder of images
+You can predict scaled disparity for a single image or a folder of images with:
+
+```shell
+CUDA_VISIBLE_DEVICES=0 python test_simple.py --model_path <your_model_path> --image_path <your_image_or_folder_path>
+```
+
