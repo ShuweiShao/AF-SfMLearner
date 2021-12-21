@@ -70,7 +70,7 @@ The train/test/validation split for Endovis dataset used in our works is defined
 
 
 
-## ⏳ Endovis Training
+## ⏳ Endovis training
 
 **Stage-wise fashion:**
 
