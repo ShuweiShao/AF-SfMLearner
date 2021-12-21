@@ -70,17 +70,17 @@ The train/test/validation split for Endovis dataset used in our works is defined
 
 
 
-## ⏳ Training
+## ⏳ Endovis Training
 
 **Stage-wise fashion:**
 
-*Stage one:*
+Stage one:
 
 ```shell
 CUDA_VISIBLE_DEVICES=0 python train_stage_one.py --data_path <your_data_path> --log_dir <path_to_save_model (optical flow)>
 ```
 
-*Stage two:*
+Stage two:
 
 ```shell
 CUDA_VISIBLE_DEVICES=0 python train_stage_two.py --data_path <your_data_path> --log_dir <path_to_save_model (depth, pose, appearance flow, optical flow)> --load_weights_folder <path_to_the_trained_optical_flow_model_in_stage_one>
@@ -92,4 +92,17 @@ CUDA_VISIBLE_DEVICES=0 python train_stage_two.py --data_path <your_data_path> --
 CUDA_VISIBLE_DEVICES=0 python train_end_to_end.py --data_path <your_data_path> --log_dir <path_to_save_model (depth, pose, appearance flow, optical flow)>
 ```
 
+## 📊 Endovis evaluation
+
+
+To prepare the ground truth depth maps run:
+```shell
+python export_gt_depth.py --data_path endovis_data --split endovis
+```
+...assuming that you have placed the Endovis dataset in the default location of `./endovis_data/`.
+
+The following example command evaluates the epoch 19 weights of a model named `mono_model`:
+```shell
+python evaluate_depth.py --data_path <your_data_path> --load_weights_folder ~/mono_model/mdp/models/weights_19/ --eval_mono
+```
 
