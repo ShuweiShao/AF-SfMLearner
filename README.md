@@ -121,4 +121,4 @@ CUDA_VISIBLE_DEVICES=0 python evaluate_depth.py --data_path <your_data_path> --l
 
 
 ## Acknowledgement
-Our code is based on the implementation of [Monodepth2](https://github.com/nianticlabs/monodepth2).
+Our code is based on the implementation of [Monodepth2](https://github.com/nianticlabs/monodepth2). We thank Monodepth2's authors for their excellent work and repository.
