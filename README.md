@@ -63,7 +63,7 @@ CUDA_VISIBLE_DEVICES=0 python test_simple.py --model_path <your_model_path> --im
 
 You can download the [Endovis or SCARED dataset](https://endovissub2019-scared.grand-challenge.org) by signing the challenge rules and emailing them to max.allan@intusurg.com, the [EndoSLAM dataset](https://data.mendeley.com/datasets/cd2rtzm23r/1), the [SERV-CT dataset](https://www.ucl.ac.uk/interventional-surgical-sciences/serv-ct), and the [Hamlyn dataset](http://hamlyn.doc.ic.ac.uk/vision/).
 
-**Splits**
+**Split**
 
 The train/test/validation split for Endovis dataset used in our works is defined in the `splits/endovis` folder. 
 
