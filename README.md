@@ -1,6 +1,6 @@
 # AF-SfMLearner
 
-This is the reference PyTorch implementation for training and testing depth estimation models using the method described in
+This is the official PyTorch implementation for training and testing depth estimation models using the method described in
 
 > **Self-Supervised Monocular Depth and Ego-Motion Estimation in Endoscopy: Appearance Flow to the Rescue**
 >
