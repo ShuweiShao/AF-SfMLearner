@@ -26,8 +26,10 @@ If you find our work useful in your research please consider citing our paper:
 @article{shao2021self,
   title={Self-Supervised Monocular Depth and Ego-Motion Estimation in Endoscopy: Appearance Flow to the Rescue},
   author={Shao, Shuwei and Pei, Zhongcai and Chen, Weihai and Zhu, Wentao and Wu, Xingming and Sun, Dianmin and Zhang, Baochang},
-  journal={arXiv preprint arXiv:2112.08122},
-  year={2021}
+  journal={Medical Image Analysis},
+  pages={102338},
+  year={2022},
+  publisher={Elsevier}
 }
 ```
 ```
