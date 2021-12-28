@@ -23,7 +23,7 @@ and
 If you find our work useful in your research please consider citing our paper:
 
 ```
-@article{shao2021self,
+@article{shao2022self,
   title={Self-Supervised Monocular Depth and Ego-Motion Estimation in Endoscopy: Appearance Flow to the Rescue},
   author={Shao, Shuwei and Pei, Zhongcai and Chen, Weihai and Zhu, Wentao and Wu, Xingming and Sun, Dianmin and Zhang, Baochang},
   journal={Medical Image Analysis},
