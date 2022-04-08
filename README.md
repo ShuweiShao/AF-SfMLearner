@@ -16,6 +16,8 @@ and
 >
 > [ICRA 2021 (pdf)](https://ieeexplore.ieee.org/abstract/document/9561508).
 
+#### Overview
+
 <p align="center">
 <img src='imgs/overview.png' width=800/> 
 </p>
@@ -129,7 +131,7 @@ CUDA_VISIBLE_DEVICES=0 python evaluate_depth.py --data_path <your_data_path> --l
 <img src='imgs/appearance_flow.png' width=800/> 
 </p>
 
-#### Depth
+#### Depth Estimation
 
 <p align="center">
 <img src='imgs/depth.png' width=800/> 
@@ -141,7 +143,7 @@ CUDA_VISIBLE_DEVICES=0 python evaluate_depth.py --data_path <your_data_path> --l
 <img src='imgs/pose.png' width=800/> 
 </p>
 
-#### Reconstruction
+#### 3D Reconstruction
 
 <p align="center">
 <img src='imgs/reconstruction.png' width=800/> 
