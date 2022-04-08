@@ -16,7 +16,9 @@ and
 >
 > [ICRA 2021 (pdf)](https://ieeexplore.ieee.org/abstract/document/9561508).
 
-
+<p align="center">
+<img src='imgs/overview.png' width=800/> 
+</p>
 
 ## ✏️ 📄 Citation
 
@@ -123,8 +125,27 @@ CUDA_VISIBLE_DEVICES=0 python evaluate_depth.py --data_path <your_data_path> --l
 ```
 #### Appearance Flow
 
+<p align="center">
+<img src='imgs/appearance_flow.png' width=800/> 
+</p>
 
+#### Depth
 
+<p align="center">
+<img src='imgs/depth.png' width=800/> 
+</p>
+
+#### Visual Odometry
+
+<p align="center">
+<img src='imgs/pose.png' width=800/> 
+</p>
+
+#### Reconstruction
+
+<p align="center">
+<img src='imgs/reconstruction.png' width=800/> 
+</p>
 
 
 ## 📦 Model zoo
