@@ -74,6 +74,15 @@ You can download the [Endovis or SCARED dataset](https://endovissub2019-scared.g
 
 The train/test/validation split for Endovis dataset used in our works is defined in the `splits/endovis` folder. 
 
+**Data preprocessing**
+
+We use the ffmpeg to convert the RGB.mp4 into images.png:
+
+```shell
+ffmpeg -i rgb.mp4 %10d.png
+```
+we only use the left frames in our experiments. please refer to extract_left_frames.py. For dataset 8 and 9, we rephrase keyframes 0-4 as keyframes 1-5.
+
 **Data structure**
 
 The directory of dataset structure is shown as follows:
