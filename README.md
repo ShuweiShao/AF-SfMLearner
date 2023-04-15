@@ -84,7 +84,7 @@ The directory of dataset structure is shown as follows:
     keyframe1/
       image_02/
         data/
-          image1.png
+          0000000001.png
 ```
 
 
