@@ -173,7 +173,7 @@ If you use the latest PyTorch version,
 
 Note1: please try to add 'align_corners=True' to 'F.interpolate' and 'F.grid_sample' when you train the network, to get a good camera trajectory.
 
-Note2: please revise color_avg=transforms.ColorJitter.get_params(self.brightness,self.contrast,self.saturation,self.hue) to color_avg=transforms.ColorJitter(self.brightness,self.contrast,self.saturation,self.hue).
+Note2: please revise color_aug=transforms.ColorJitter.get_params(self.brightness,self.contrast,self.saturation,self.hue) to color_avg=transforms.ColorJitter(self.brightness,self.contrast,self.saturation,self.hue).
 
 
 
